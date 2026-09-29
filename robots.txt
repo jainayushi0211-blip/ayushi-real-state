@@ -1,0 +1,40 @@
+# ==============================================================================
+# AYUSHI REAL ESTATE - ROBOTS.TXT
+# Luxury Dubai Real Estate Brokerage
+# ==============================================================================
+
+User-agent: *
+# Allow public search engines to crawl all luxury residences and off-plan projects
+Allow: /
+Allow: /assets/
+Allow: /sitemap.xml
+
+# Strictly disallow indexing of private CRM, staff portal, and internal APIs
+Disallow: /admin
+Disallow: /admin/
+Disallow: /admin/*
+Disallow: /#/admin
+Disallow: /#/admin/*
+Disallow: /api/
+Disallow: /api/*
+
+# Explicit crawler privacy directives
+User-agent: Googlebot
+Disallow: /admin
+Disallow: /admin/
+Disallow: /admin/*
+Disallow: /#/admin
+Disallow: /#/admin/*
+Disallow: /api/
+Disallow: /api/*
+
+User-agent: Bingbot
+Disallow: /admin
+Disallow: /admin/
+Disallow: /admin/*
+Disallow: /#/admin
+Disallow: /#/admin/*
+Disallow: /api/
+Disallow: /api/*
+
+Sitemap: https://ayushirealestate.ae/sitemap.xml
