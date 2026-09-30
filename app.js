@@ -4247,7 +4247,7 @@ window.openProjectModal = function(projectId = null) {
   document.getElementById('proj-crud-handover').value = proj ? proj.handover_date : 'Q4 2027';
   document.getElementById('proj-crud-payment').value = proj ? proj.payment_plan : '60/40 on Handover';
   document.getElementById('proj-crud-units').value = proj ? (proj.units_available || 24) : 24;
-  document.getElementById('proj-crud-img').value = proj ? proj.image_url : 'assets/images/lumina-tower.jpg';
+  document.getElementById('proj-crud-img').value = proj ? proj.image_url : 'assets/images/lumina-tower-offplan.jpg';
   document.getElementById('proj-crud-desc').value = proj ? proj.description : '';
 
   modal.classList.add('open');
