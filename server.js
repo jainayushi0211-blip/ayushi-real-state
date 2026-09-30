@@ -532,6 +532,10 @@ app.delete('/api/offplan/:id', async (req, res) => {
 // Static assets
 app.use(express.static(__dirname));
 
-app.listen(PORT, () => {
-  console.log(`✨ Ayushi Real Estate API server running at http://localhost:${PORT}`);
-});
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`✨ Ayushi Real Estate API server running at http://localhost:${PORT}`);
+  });
+}
+
+export default app;
